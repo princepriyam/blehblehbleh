@@ -1,52 +1,16 @@
-# Prerequisites
-*.d
+#include<studio.h>;
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+main(){
 
-# Linker output
-*.ilk
-*.map
-*.exp
+int a = 10, b= 20;
 
-# Precompiled Headers
-*.gch
-*.pch
+printf("Before swap a = %d b = %d",a,b);
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+a = a+b ;
+b= a-b ;
+a = a-b ;
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+print( "\n After swap a=%d b=%d ",a,b);
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+return 0;
+}
